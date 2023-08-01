@@ -1,0 +1,31 @@
+
+/    const {password, ...other} = user._do
+
+This code is using object destructuring to create a new variable password and a new object other. The value of password is the value of the password property of the user object, and the other object is a new object that contains all of the properties of the user object except for the password property.
+
+For example, if the user object looks like this:
+
+Copy code
+const user = {
+  _id: '123',
+  name: 'John',
+  email: 'john@example.com',
+  password: 'password123',
+  age: 30
+};
+Then after the destructuring statement is executed, the variables password and other will be defined like this:
+
+Copy code
+const password = 'password123';
+const other = {
+  _id: '123',
+  name: 'John',
+  email: 'john@example.com',
+  age: 30
+};
+The ... syntax, known as the rest operator, is used to create an object that contains all of the properties of the original object except for the ones listed before the rest operator. In this case, the other object contains all of the properties of the user object except for the password property.
+
+This destructuring syntax can be useful for extracting specific properties from an object and using them in a separate context, or for creating a new object that contains a subset of the properties from the original object.
+
+.
+
